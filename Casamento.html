@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casamento</title>
+  <link rel="stylesheet" href="Casamento.css">
+</head>
+
+<body class="page">
+
+  <!--cabeçalhos-->
+  <header class="header">
+    <div class="header__container">
+      <a class="header__logo" href="#home">LOGO</a>
+      <a class="link" href="sobre_ford.html" target="_blank">Sobre a Ford</a>
+      <a class="link" href="INDEX4.HTML" target="_blank">Próxima</a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#home">Início</a></li>
+          <li class="nav__item"><a class="nav__link" href="#identidade">Identidade Visual</a></li>
+          <li class="nav__item"><a class="nav__link" href="#apresentacao">Serviço</a></li>
+          <li class="nav__item"><a class="nav__link" href="#pedido">Meu Pedido</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__user">
+        <a class="header__user-link" href="#identidade">Login</a>
+        <a class="header__user-link header__user-link--highlight" href="#identidade">Cadastre-se</a>
+        <span class="header__avatar" aria-hidden="true">&#128100;</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!--tela1 : home-->
+    <section class="screen screen--home" id="home">
+      <h1 class="screen__title">Encontre tudo para o seu casamento</h1>
+
+      <nav class="categories" aria-label="Categorias">
+        <a class="categories__item" href="#apresentacao">Lugares</a>
+        <a class="categories__item" href="#apresentacao">Buffet</a>
+        <a class="categories__item" href="#apresentacao">Vestimenta</a>
+        <a class="categories__item" href="#apresentacao">Fotógrafos</a>
+      </nav>
+
+      <div class="layout">
+        <aside class="filters">
+          <h2 class="filters__title">Filtros</h2>
+          <button class="filters__button" type="button">Melhores avaliados</button>
+          <button class="filters__button" type="button">Mais contratados</button>
+          <button class="filters__button" type="button">Menores valores</button>
+        </aside>
+
+        <div class="layout__content">
+          <h2 class="section-title">Representações das melhores avaliações</h2>
+
+          <div class="cards">
+            <article class="card">
+              <div class="card__image">Foto</div>
+              <div class="card__body">
+                <h3 class="card__title">Lugares</h3>
+                <p class="card__text">Espaços e salões mais bem avaliados.</p>
+                <a class="button button--small" href="#apresentacao">Ver detalhes</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__image">Foto</div>
+              <div class="card__body">
+                <h3 class="card__title">Buffet</h3>
+                <p class="card__text">Cardápios para todos os gostos e orçamentos.</p>
+                <a class="button button--small" href="#apresentacao">Ver detalhes</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__image">Foto</div>
+              <div class="card__body">
+                <h3 class="card__title">Vestimenta</h3>
+                <p class="card__text">Vestidos, ternos e acessórios para o grande dia.</p>
+                <a class="button button--small" href="#apresentacao">Ver detalhes</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="card__image">Foto</div>
+              <div class="card__body">
+                <h3 class="card__title">Fotógrafos</h3>
+                <p class="card__text">Profissionais para eternizar cada momento.</p>
+                <a class="button button--small" href="#apresentacao">Ver detalhes</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--tela2 : identidade visual e cadastro-->
+    <section class="screen screen--identidade" id="identidade">
+      <h1 class="screen__title">Identidade Visual</h1>
+
+      <form class="form" action="#home">
+        <div class="form__group">
+          <label class="form__label" for="cidade">Cidade</label>
+          <select class="form__select" id="cidade" name="cidade">
+            <option value="">Selecione</option>
+            <option>São Paulo</option>
+            <option>Osasco</option>
+            <option>Barueri</option>
+            <option>Campinas</option>
+          </select>
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="data">Data de casamento</label>
+          <input class="form__input" type="date" id="data" name="data">
+        </div>
+
+        <div class="form__group">
+          <label class="form__label" for="noivo">Noivo(a)</label>
+          <select class="form__select" id="noivo" name="noivo">
+            <option value="">Selecione</option>
+            <option>Noivo</option>
+            <option>Noiva</option>
+            <option>Noive</option>
+          </select>
+        </div>
+
+        <button class="button form__submit" type="submit">Aplicar</button>
+      </form>
+    </section>
+
+    <!--tela3 : apresentação/serviço-->
+    <section class="screen screen--apresentacao" id="apresentacao">
+      <div class="screen__header">
+        <h1 class="screen__title">Apresentação da Empresa (Serviço)</h1>
+        <span class="screen__user">Usuário</span>
+      </div>
+
+      <div class="presentation">
+        <div class="presentation__main">
+          <div class="gallery" aria-label="Bloco de fotos">
+            <h2 class="gallery__title">Bloco de fotos</h2>
+            <div class="gallery__grid">
+              <div class="gallery__item">Foto 1</div>
+              <div class="gallery__item">Foto 2</div>
+              <div class="gallery__item">Foto 3</div>
+              <div class="gallery__item">Foto 4</div>
+            </div>
+          </div>
+
+          <div class="info">
+            <h2 class="info__title">Informações de serviço e local</h2>
+            <p class="info__text">Descrição da empresa, serviços oferecidos, endereço e regras de uso do local.</p>
+          </div>
+        </div>
+
+        <aside class="summary">
+          <h2 class="summary__title">Valor</h2>
+          <p class="summary__price">R$ 0,00</p>
+
+          <h3 class="summary__subtitle">Datas disponíveis</h3>
+          <ul class="summary__list">
+            <li class="summary__list-item">Data 1</li>
+            <li class="summary__list-item">Data 2</li>
+            <li class="summary__list-item">Data 3</li>
+          </ul>
+
+          <h3 class="summary__subtitle">Contato</h3>
+          <p class="summary__text">(11) 00000-0000<br>contato@empresa.com</p>
+
+          <a class="button" href="#pedido">Contratar</a>
+        </aside>
+      </div>
+    </section>
+
+    <!--tela4 : pedido-->
+    <section class="screen screen--pedido" id="pedido">
+      <div class="screen__header">
+        <h1 class="screen__title">Meu Pedido</h1>
+        <label class="screen__user">
+          <input class="screen__checkbox" type="checkbox" checked>
+          Cliente
+        </label>
+      </div>
+
+      <div class="order">
+        <div class="order__items">
+          <h2 class="order__title">Produto / Serviço</h2>
+          <ul class="order__list">
+            <li class="order__item">
+              <span class="order__item-name">Serviço selecionado</span>
+              <span class="order__item-price">R$ 0,00</span>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="order__summary">
+          <h2 class="order__title">Resumo</h2>
+          <p class="order__text">Valor + condições de pagamento</p>
+          <p class="order__total">Total: R$ 0,00</p>
+
+          <div class="cupom">
+            <label class="cupom__label" for="cupom">Cupom de desconto</label>
+            <div class="cupom__field">
+              <input class="cupom__input" type="text" id="cupom" placeholder="Digite o cupom">
+              <button class="button button--small" type="button">Aplicar</button>
+            </div>
+          </div>
+
+          <button class="button button--full" type="button">Finalizar</button>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <!--rodapé todas as paginas-->
+  <footer class="footer">
+    <ul class="footer__list">
+      <li class="footer__item"><a class="footer__link" href="#home">Suporte</a></li>
+      <li class="footer__item"><a class="footer__link" href="#home">Ajuda</a></li>
+      <li class="footer__item"><a class="footer__link" href="#home">Dúvida</a></li>
+      <li class="footer__item"><a class="footer__link" href="#home">Contato</a></li>
+      <li class="footer__item"><a class="footer__link" href="#home">Feedback</a></li>
+    </ul>
+  </footer>
+
+</body>
+
+</html>
